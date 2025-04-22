@@ -7,7 +7,7 @@ function App() {
 
   const fetchQuote = () => {
     setLoading(true);
-    fetch('/api/quote')
+    fetch('https://fullstack-quote-app.onrender.com/api/quote')
       .then(res => res.json())
       .then(data => {
         setQuote(data.quote);
